@@ -1,49 +1,32 @@
 import React from 'react';
 
-import { images } from '../../constants';
 import { SubHeading } from '../../components';
+import { images, data } from '../../constants';
 import './Laurels.css';
 
+const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
+  <div className="app__laurels_awards-card">
+    <img src={imgUrl} alt="awards" />
+    <div className="app__laurels_awards-card_content">
+      <p className="p__cormorant" style={{ color: '#DCCA87' }}>{title}</p>
+      <p className="p__opensans">{subtitle}</p>
+    </div>
+  </div>
+);
+
 const Laurels = () => (
-  <div className='app__bg section__padding flex__center'>
-    <div className='app__laurels'>
-      <div className='app__laurels-awards'>
-        <SubHeading title ="Awards & recognition"/>
-        <h1 className='headtext__cormorant'>Our Laurels</h1>
-        <div className='app__laurels-awards__boxes'>
-          <div className='app__laurels-awards__box'>
-              <img src={images.award02} alt="award" />
-              <div>
-                <p className='p__cormorant'>Bib Gourmond</p>
-                <p classname="p__opensans">Lorem Ipsum Dolor Sit Amet, Consectetur.</p>
-              </div>
-          </div>
-          <div className='app__laurels-awards__box'>
-              <img src={images.award01} alt="award" />
-              <div>
-                <p className='p__cormorant'>Rising Star</p>
-                <p classname="p__opensans">Lorem Ipsum Dolor Sit Amet, Consectetur.</p>
-              </div>
-          </div>
-          <div className='app__laurels-awards__box'>
-              <img src={images.award05} alt="award" />
-              <div>
-                <p className='p__cormorant'>AA Hospitality</p>
-                <p classname="p__opensans">Lorem Ipsum Dolor Sit Amet, Consectetur.</p>
-              </div>
-          </div>
-          <div className='app__laurels-awards__box'>
-              <img src={images.award03} alt="award" />
-              <div>
-                <p className='p__cormorant'>Outstanding Chef</p>
-                <p classname="p__opensans">Lorem Ipsum Dolor Sit Amet, Consectetur.</p>
-              </div>
-          </div>
-        </div>
+  <div className="app__bg app__wrapper section__padding" id="awards">
+    <div className="app__wrapper_info">
+      <SubHeading title="Awards & recognition" />
+      <h1 className="headtext__cormorant">Our Laurels</h1>
+
+      <div className="app__laurels_awards">
+        {data.awards.map((award) => <AwardCard award={award} key={award.title} />)}
       </div>
-      <div className='app__laurels-img'>
-        <img src={images.laurels} alt=""/>
-      </div>
+    </div>
+
+    <div className="app__wrapper_img">
+      <img src={images.laurels} alt="laurels_img" />
     </div>
   </div>
 );

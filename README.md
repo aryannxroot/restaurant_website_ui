@@ -17,9 +17,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Overview
 
-![Restaurant Website Design](./Figam_design/Restaurant%20Home.png)
+![Restaurant Website Design](./Figma_design/Restaurant%20Home.png)
 
-Get a glimpse of the site ---> [Restaurant Website](#).
+Get a glimpse of the site ---> [Restaurant Website](https://aryannxroot.github.io/restraunt-website/).
 
 ## Features
 
@@ -34,9 +34,9 @@ Get a glimpse of the site ---> [Restaurant Website](#).
 To set up the project, clone this repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/restaurant_website.git
-cd restaurant_website
-npm install
+git clone https://github.com/yourusername/restraunt-website.git
+cd restraunt-website
+npm i
 ```
 
 After installing the dependencies, you can start the development server:

@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Restaurant Website Design](./Figma_design/Restaurant%20Home.png)
 
-Get a glimpse of the site ---> [Restaurant Website](https://aryannxroot.github.io/restraunt-website/).
+Get a glimpse of the site ---> [Restaurant Website](https://aryannxroot.github.io/restaurant_website_ui/).
 
 ## Features
 
